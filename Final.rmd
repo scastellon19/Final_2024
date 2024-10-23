@@ -48,19 +48,19 @@ barchartGC(~infected + treatment,data=Male)
 barchartGC(~infected + treatment,data=Male, type="percent")
 
 ```
-
+## Numerical Results
 
 ```{r}
-table2 <- xtabs(~infected + treatment, data=Male)
-rowPerc(table2)
-colPerc(table2)
+table1 <- xtabs(~infected + treatment, data=Male)
+rowPerc(table1)
+colPerc(table1)
 ```
 
 ## Inferential  
-
 ```{r}
-chisq.test(table2)
-chisqtestGC(table2)
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
 ```
 
 ## Females
@@ -85,6 +85,9 @@ barchartGC(~infected + treatment,data=Female)
 barchartGC(~infected + treatment,data=Female, type="percent")
 
 ```
+The bar chart shows that you are less likely to contract covid 91 if your received the vaccine.   
+
+## Numerical Results
 
 ```{r}
 table2 <- xtabs(~infected + treatment, data=Female)
