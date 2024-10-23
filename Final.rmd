@@ -24,22 +24,27 @@ mutate(across(where(is.character), as.factor))
 
 A new  preventative vaccine (covid921) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups by gender( guys and gals), drug use, and sexual orientation. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
 
-## Methods   
-$H_0$ 
 
-$H_0$
 
 ## Males
 
+$H_0$ the vaccine is not effective in preventing covid 91 in males  
+$H_0$ the vaccine is effective in preventing covid 91 in males  
 
 ## Females
 
+$H_0$ the vaccine is not effective in preventing covid 91 in females  
+$H_0$ the vaccine is effective in preventing covid 91 in females  
 
 ## LGBTQ
 
+$H_0$ the vaccine is not effective in preventing covid 91 in LGBTQ  
+$H_0$ the vaccine is effective in preventing covid 91 in LGBTQ  
 
 
 ## Druggies
 
+$H_0$ the vaccine is not effective in preventing covid 91 in Druggies  
+$H_0$ the vaccine is effective in preventing covid 91 in Druggies  
 
 # Overall Results and Conclusions
