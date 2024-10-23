@@ -28,23 +28,54 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+Question: How effective is the vaccine on males?
+
+##Method 
+
 $H_0$ the vaccine is not effective in preventing covid 91 in males  
 $H_A$ the vaccine is effective in preventing covid 91 in males  
 
+Infected~Sex  
+Categorical ~ Categorical   
+We will use a helper file Cat~Cat  
+
 ## Females
+
+Question:How effective is the vaccine on females?
+
+##Method 
 
 $H_0$ the vaccine is not effective in preventing covid 91 in females  
 $H_A$ the vaccine is effective in preventing covid 91 in females  
 
+Infected~Sex  
+Categorical ~ Categorical   
+We will use a helper file Cat~Cat    
+
 ## LGBTQ
+
+Question:How effective is the vaccine on LGBTQ?
+
+##Method 
 
 $H_0$ the vaccine is not effective in preventing covid 91 in LGBTQ  
 $H_A$ the vaccine is effective in preventing covid 91 in LGBTQ  
 
+Infected~LGBTQ  
+Categorical ~ Categorical   
+We will use a helper file Cat~Cat    
 
 ## Druggies
 
+Question:How effective is the vaccine on Druggies?
+
+##Method 
+
 $H_0$ the vaccine is not effective in preventing covid 91 in Druggies  
 $H_0A$ the vaccine is effective in preventing covid 91 in Druggies  
+
+Infected~DrugUser  
+Categorical ~ Categorical   
+We will use a helper file Cat~Cat   
 
 # Overall Results and Conclusions
