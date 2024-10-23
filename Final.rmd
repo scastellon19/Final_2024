@@ -39,6 +39,30 @@ Infected~Sex
 Categorical ~ Categorical   
 We will use a helper file Cat~Cat  
 
+```{r}
+Male <- FinalDat[FinalDat$sex=="M",]
+```
+
+```{r}
+barchartGC(~infected + treatment,data=Male)
+barchartGC(~infected + treatment,data=Male, type="percent")
+
+```
+
+
+```{r}
+table2 <- xtabs(~infected + treatment, data=Male)
+rowPerc(table2)
+colPerc(table2)
+```
+
+## Inferential  
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
+
 ## Females
 
 Question:How effective is the vaccine on females?
@@ -52,6 +76,27 @@ Infected~Sex
 Categorical ~ Categorical   
 We will use a helper file Cat~Cat    
 
+```{r}
+Female <- FinalDat[FinalDat$sex=="F",]
+```
+
+```{r}
+barchartGC(~infected + treatment,data=Female)
+barchartGC(~infected + treatment,data=Female, type="percent")
+
+```
+
+```{r}
+table2 <- xtabs(~infected + treatment, data=Female)
+rowPerc(table2)
+colPerc(table2)
+```
+
+```{r}
+chisq.test(table2)
+chisqtestGC(table2)
+```
+
 ## LGBTQ
 
 Question:How effective is the vaccine on LGBTQ?
@@ -64,6 +109,7 @@ $H_A$ the vaccine is effective in preventing covid 91 in LGBTQ
 Infected~LGBTQ  
 Categorical ~ Categorical   
 We will use a helper file Cat~Cat    
+
 
 ## Druggies
 
