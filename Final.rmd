@@ -26,7 +26,7 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 
 
-## Males
+# Males
 
 Question: How effective is the vaccine on males?
 
@@ -38,6 +38,8 @@ $H_A$ the vaccine is effective in preventing covid 91 in males
 Infected~Sex  
 Categorical ~ Categorical   
 We will use a helper file Cat~Cat  
+
+## Graphical  
 
 ```{r}
 Male <- FinalDat[FinalDat$sex=="M",]
@@ -63,7 +65,7 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-## Females
+# Females
 
 Question:How effective is the vaccine on females?
 
@@ -75,6 +77,8 @@ $H_A$ the vaccine is effective in preventing covid 91 in females
 Infected~Sex  
 Categorical ~ Categorical   
 We will use a helper file Cat~Cat    
+
+## Graphical  
 
 ```{r}
 Female <- FinalDat[FinalDat$sex=="F",]
@@ -90,17 +94,17 @@ The bar chart shows that you are less likely to contract covid 91 if your receiv
 ## Numerical Results
 
 ```{r}
-table2 <- xtabs(~infected + treatment, data=Female)
-rowPerc(table2)
-colPerc(table2)
+table1 <- xtabs(~infected + treatment, data=Female)
+rowPerc(table1)
+colPerc(table1)
 ```
 
 ```{r}
-chisq.test(table2)
-chisqtestGC(table2)
+chisq.test(table1)
+chisqtestGC(table1)
 ```
 
-## LGBTQ
+# LGBTQ
 
 Question:How effective is the vaccine on LGBTQ?
 
@@ -114,7 +118,7 @@ Categorical ~ Categorical
 We will use a helper file Cat~Cat    
 
 
-## Druggies
+# Druggies
 
 Question:How effective is the vaccine on Druggies?
 
