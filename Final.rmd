@@ -108,19 +108,22 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-```{r}
-chisq.test(table1)
-chisqtestGC(table1)
-```
+The numerical data shows that within the placebo group 64.93% of females got infected with covid 91, while of the females who received the vaccine only 35.07% contracted covid91. Therefore this indicates that the females who received the vaccine significantly reduced the risk of contracting covid91.
 
 ## Inferential  
+
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
 fisher.test(table1)
-``` 
+```
+
+The Fisher exact test shows the p-value is .00000001914 which is lower than 0.05 so we reject the null hypothesis.
+
 
 ## Conclusion
+
+The bar chart shows that you are less likely to contract covid 91 if your received the vaccine.The numerical data shows that within the placebo group 64.93% of females got infected with covid 91, while of the females who received the vaccine only 35.07% contracted covid 91. Therefore this indicates that the females who received the vaccine significantly reduced the risk of contracting covid 91. The Fisher exact test shows the p-value is .00000001914 which is lower than 0.05 so we reject the null hypothesis.
 
 # LGBTQ
 
